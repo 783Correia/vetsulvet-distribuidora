@@ -60,7 +60,7 @@ export default function ProdutosContent() {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Sidebar */}
             <aside className="lg:col-span-1 space-y-8">
-              <div className="sticky top-24">
+              <div className="lg:sticky lg:top-24">
                 {/* Search */}
                 <div className="relative mb-8">
                   <div className="relative flex items-center bg-white border border-gray-200 rounded-xl overflow-hidden focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/10 transition-all shadow-sm">
@@ -80,12 +80,12 @@ export default function ProdutosContent() {
                   <h3 className="text-gray-900 font-bold text-lg mb-4 flex items-center gap-2">
                     <FaFilter className="text-primary text-sm" /> Categorias
                   </h3>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 scrollbar-hide">
                     {categories.map((cat) => (
                       <button
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
-                        className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${activeCategory === cat
+                        className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap min-h-[44px] ${activeCategory === cat
                           ? "bg-primary text-white font-bold shadow-md"
                           : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                           }`}

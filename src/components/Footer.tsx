@@ -29,24 +29,24 @@ export default function Footer() {
                   href="https://instagram.com/jacolocacaomaquinas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-white/[0.05] hover:bg-lime hover:text-forest rounded-xl flex items-center justify-center text-white/30 transition-all duration-300"
+                  className="w-10 h-10 bg-white/[0.05] hover:bg-lime hover:text-forest rounded-xl flex items-center justify-center text-white/30 transition-all duration-300"
                 >
-                  <FaInstagram size={15} />
+                  <FaInstagram size={17} />
                 </a>
                 <a
                   href={getWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-white/[0.05] hover:bg-lime hover:text-forest rounded-xl flex items-center justify-center text-white/30 transition-all duration-300"
+                  className="w-10 h-10 bg-white/[0.05] hover:bg-lime hover:text-forest rounded-xl flex items-center justify-center text-white/30 transition-all duration-300"
                 >
-                  <FaWhatsapp size={15} />
+                  <FaWhatsapp size={17} />
                 </a>
               </div>
             </div>
 
             {/* Links */}
             <div>
-              <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/20 mb-5">
+              <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/20 mb-5">
                 Navegação
               </h4>
               <ul className="space-y-2.5">
@@ -59,7 +59,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-white/40 hover:text-lime text-sm transition-colors duration-300"
+                      className="text-white/40 hover:text-lime text-sm transition-colors duration-300 inline-block py-0.5"
                     >
                       {link.label}
                     </Link>
@@ -70,7 +70,7 @@ export default function Footer() {
 
             {/* Frota */}
             <div>
-              <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/20 mb-5">
+              <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/20 mb-5">
                 Nossa Frota
               </h4>
               <ul className="space-y-2.5">
@@ -84,7 +84,7 @@ export default function Footer() {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-white/40 hover:text-lime text-sm transition-colors duration-300"
+                      className="text-white/40 hover:text-lime text-sm transition-colors duration-300 inline-block py-0.5"
                     >
                       {item.label}
                     </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
 
             {/* Contato */}
             <div>
-              <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/20 mb-5">
+              <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white/20 mb-5">
                 Contato
               </h4>
               <ul className="space-y-3">

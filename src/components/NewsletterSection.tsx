@@ -37,7 +37,7 @@ export default function NewsletterSection() {
                                 <span className="text-forest/40 text-xs font-bold uppercase tracking-wider">Obras</span>
                             </div>
                         </div>
-                        <p className="text-[11px] text-gray-400 text-center tracking-wide uppercase font-medium">Obras de Infraestrutura</p>
+                        <p className="text-xs text-gray-400 text-center tracking-wide uppercase font-medium">Obras de Infraestrutura</p>
                     </div>
 
                     {/* Center Content */}
@@ -45,10 +45,10 @@ export default function NewsletterSection() {
                         {/* Trust badge */}
                         <div className="inline-flex items-center gap-2 bg-forest/[0.06] rounded-full px-5 py-2 mb-8">
                             <div className="w-1.5 h-1.5 bg-lime rounded-full"></div>
-                            <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-forest/70">Desde 2010 · São Paulo, SP</span>
+                            <span className="text-xs font-bold uppercase tracking-[0.15em] text-forest/70">Desde 2010 · São Paulo, SP</span>
                         </div>
 
-                        <h2 className="text-[2.5rem] md:text-[3.2rem] leading-[1.05] font-bold text-dark tracking-tight">
+                        <h2 className="text-[2rem] md:text-[3.2rem] leading-[1.05] font-bold text-dark tracking-tight">
                             Força e confiabilidade<br />
                             <span className="text-forest">para sua obra.</span>
                         </h2>
@@ -107,7 +107,7 @@ export default function NewsletterSection() {
                                 <span className="text-amber-700/40 text-xs font-bold uppercase tracking-wider">Operações</span>
                             </div>
                         </div>
-                        <p className="text-[11px] text-gray-400 text-center tracking-wide uppercase font-medium">Operações Pesadas</p>
+                        <p className="text-xs text-gray-400 text-center tracking-wide uppercase font-medium">Operações Pesadas</p>
                     </div>
 
                 </div>

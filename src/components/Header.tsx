@@ -88,7 +88,7 @@ export default function Header() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-white/70 hover:text-white rounded-lg transition-colors"
+            className="lg:hidden p-2.5 text-white/70 hover:text-white rounded-lg transition-colors"
             aria-label="Menu"
           >
             {mobileOpen ? <FaTimes size={20} /> : <FaBars size={20} />}

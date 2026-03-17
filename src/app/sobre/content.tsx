@@ -260,14 +260,14 @@ export default function SobreContent() {
                   {membro.nome}
                 </h3>
                 <div className="flex items-center justify-center gap-1.5 mt-1 text-white/40 text-sm">
-                  <FaMapMarkerAlt className="text-lime text-[10px]" />
+                  <FaMapMarkerAlt className="text-lime text-xs" />
                   {membro.regiao}
                 </div>
                 <a
                   href={getWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-lime text-xs font-bold mt-4 hover:underline"
+                  className="inline-flex items-center gap-2 text-lime text-sm font-bold mt-4 hover:underline py-1"
                 >
                   <FaWhatsapp />
                   Entrar em contato

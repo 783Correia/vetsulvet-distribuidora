@@ -80,7 +80,7 @@ function Hero() {
             className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-5"
           >
             <div className="w-2 h-2 rounded-full bg-lime animate-pulse" />
-            <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-white">Força e Confiabilidade para a Sua Obra</span>
+            <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white">Força e Confiabilidade para a Sua Obra</span>
           </motion.div>
 
           {/* Headline */}
@@ -190,7 +190,7 @@ function StatsBar() {
               <div className="text-xl md:text-2xl font-extrabold text-primary mb-0.5">
                 <AnimatedCounter target={stat.target} suffix={stat.suffix} duration={1800 + index * 400} />
               </div>
-              <div className="text-[10px] md:text-sm text-gray-500 font-medium uppercase tracking-wide">{stat.label}</div>
+              <div className="text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wide">{stat.label}</div>
             </div>
           ))}
 
@@ -456,7 +456,7 @@ function ProdutosDestaque() {
               </div>
 
               <div className="absolute top-6 right-6">
-                <span className="bg-lime text-forest text-[11px] font-bold uppercase tracking-wider px-4 py-2 rounded-full">
+                <span className="bg-lime text-forest text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full">
                   {current.badge}
                 </span>
               </div>
@@ -514,8 +514,9 @@ function ProdutosDestaque() {
                 <button
                   key={i}
                   onClick={() => setActive(i)}
-                  className={`h-1.5 rounded-full transition-all duration-500 ${active === i ? "bg-primary w-10" : "bg-gray-200 w-3"
+                  className={`h-2 rounded-full transition-all duration-500 min-w-[20px] min-h-[20px] ${active === i ? "bg-primary w-10" : "bg-gray-200 w-4"
                     }`}
+                  aria-label={`Produto ${i + 1}`}
                 />
               ))}
             </div>
@@ -758,8 +759,9 @@ function Depoimentos() {
                 <button
                   key={i}
                   onClick={() => setActive(i)}
-                  className={`h-1.5 rounded-full transition-all duration-500 ${active === i ? "bg-primary w-8" : "bg-gray-300 w-2"
+                  className={`h-2 rounded-full transition-all duration-500 min-w-[20px] min-h-[20px] ${active === i ? "bg-primary w-8" : "bg-gray-300 w-3"
                     }`}
+                  aria-label={`Depoimento ${i + 1}`}
                 />
               ))}
             </div>

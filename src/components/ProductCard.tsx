@@ -30,7 +30,7 @@ function ProductCard({ product }: ProductCardProps) {
 
             {/* Content */}
             <div className="p-5 flex flex-col flex-grow">
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
                     {product.brand}
                 </span>
                 <h3 className="text-base font-bold text-gray-900 mt-1 group-hover:text-primary transition-colors duration-300 line-clamp-1">
@@ -43,10 +43,10 @@ function ProductCard({ product }: ProductCardProps) {
 
                 {/* Footer */}
                 <div className="mt-auto pt-4 border-t border-gray-100 flex flex-col gap-3">
-                    <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
                         {product.category}
                     </span>
-                    <span className="inline-flex items-center justify-center gap-2 bg-primary text-white w-full py-2.5 rounded-xl font-bold text-xs group-hover:bg-primary-dark transition-all duration-300 text-center">
+                    <span className="inline-flex items-center justify-center gap-2 bg-primary text-white w-full py-3 rounded-xl font-bold text-xs group-hover:bg-primary-dark transition-all duration-300 text-center min-h-[44px]">
                         Ver Detalhes
                         <FaArrowRight className="text-[10px]" />
                     </span>
